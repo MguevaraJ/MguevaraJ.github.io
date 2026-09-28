@@ -1,0 +1,137 @@
+.line {
+  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  min-height: calc(var(--font-size) * var(--line-height));
+}
+
+.line[data-cursorline] {
+  background: var(--bg-1);
+}
+
+.gutter {
+  min-width: 4ch;
+  padding: 0 1ch 0 0.5ch;
+  text-align: right;
+  color: var(--bg-3);
+  user-select: none;
+}
+
+.line[data-cursorline] .gutter {
+  color: var(--yellow);
+}
+
+.content {
+  grid-column: 2;
+  padding-right: 1ch;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+/* ASCII art: one row per line, no gaps between rows, scaled down on phones. */
+.line[data-art] {
+  min-height: 0;
+  line-height: 1.25;
+}
+
+.line[data-art] .content {
+  white-space: pre;
+  overflow: hidden;
+  font-size: clamp(9px, 3.4vw, 1.15em);
+  font-weight: 700;
+}
+
+/* --- syntax ------------------------------------------------------------- */
+.art {
+  color: var(--orange);
+}
+.title {
+  color: var(--orange);
+  font-weight: 700;
+}
+.heading {
+  color: var(--yellow);
+  font-weight: 700;
+}
+.bold {
+  color: var(--fg);
+  font-weight: 700;
+}
+.italic {
+  color: var(--aqua);
+  font-style: italic;
+}
+.code {
+  color: var(--green);
+}
+.link {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.link:hover,
+.link:focus-visible {
+  color: var(--aqua);
+  outline: none;
+}
+.bullet {
+  color: var(--orange);
+}
+.quote {
+  color: var(--fg-dim);
+  font-style: italic;
+}
+.rule,
+.muted,
+.comment {
+  color: var(--gray);
+}
+.comment {
+  font-style: italic;
+}
+.keyword {
+  color: var(--red);
+}
+.string {
+  color: var(--green);
+}
+.property {
+  color: var(--blue);
+}
+.number {
+  color: var(--purple);
+}
+.punctuation {
+  color: var(--fg-dim);
+}
+.type {
+  color: var(--yellow);
+}
+.tag {
+  color: var(--aqua);
+  font-weight: 700;
+}
+.special {
+  color: var(--orange);
+}
+
+/* --- overlays ----------------------------------------------------------- */
+.match {
+  background: var(--search);
+  color: var(--search-fg);
+}
+
+.cursor {
+  background: var(--fg);
+  color: var(--cursor-fg);
+  animation: blink 1.1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    background: transparent;
+    color: inherit;
+  }
+}

@@ -1,0 +1,63 @@
+.statusline {
+  --mode: var(--blue);
+  display: flex;
+  align-items: stretch;
+  background: var(--bg-1);
+  color: var(--fg-dim);
+  white-space: pre;
+  user-select: none;
+}
+
+.statusline[data-mode='insert'] {
+  --mode: var(--green);
+}
+
+.statusline[data-mode='command'],
+.statusline[data-mode='search'] {
+  --mode: var(--yellow);
+}
+
+.mode,
+.location {
+  padding: 0 1ch;
+  background: var(--mode);
+  color: var(--bg);
+  font-weight: 700;
+}
+
+.branch,
+.progress {
+  padding: 0 1ch;
+  background: var(--bg-2);
+  color: var(--fg);
+}
+
+.file {
+  padding: 0 1ch;
+  color: var(--fg);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flag {
+  color: var(--gray);
+}
+
+.modified {
+  color: var(--orange);
+}
+
+.spacer {
+  flex: 1;
+}
+
+.meta {
+  padding: 0 1ch;
+}
+
+@media (max-width: 640px) {
+  .branch,
+  .meta {
+    display: none;
+  }
+}

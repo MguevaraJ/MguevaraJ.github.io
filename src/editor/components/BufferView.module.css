@@ -1,0 +1,21 @@
+.view {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 2px;
+  outline: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-2) transparent;
+}
+
+.fill {
+  flex: 1 0 0;
+  min-height: 0;
+  overflow: hidden;
+  padding-left: 0.5ch;
+  color: var(--bg-2);
+  user-select: none;
+}

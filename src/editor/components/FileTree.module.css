@@ -1,0 +1,82 @@
+.tree {
+  flex: 0 0 24ch;
+  overflow-y: auto;
+  background: var(--bg-hard);
+  border-right: 1px solid var(--bg-1);
+  user-select: none;
+}
+
+.root {
+  padding: 0 1ch;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: block;
+  padding: 0 1ch 0 2ch;
+  color: var(--fg-dim);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.item:hover {
+  color: var(--fg);
+}
+
+.item[data-active] {
+  color: var(--fg);
+  font-weight: 700;
+}
+
+.item[data-cursor] {
+  background: var(--bg-1);
+}
+
+.item:focus-visible {
+  outline: 1px solid var(--orange);
+  outline-offset: -1px;
+}
+
+.icon {
+  display: inline-block;
+  width: 2ch;
+  color: var(--blue);
+}
+
+.icon[data-type='T'] {
+  color: var(--blue);
+}
+.icon[data-type='M'] {
+  color: var(--aqua);
+}
+.icon[data-type='P'] {
+  color: var(--red);
+}
+.icon[data-type='@'] {
+  color: var(--yellow);
+}
+.icon[data-type='?'] {
+  color: var(--purple);
+}
+
+.open {
+  color: var(--green);
+}
+
+/* On phones the tree floats over the buffer instead of squeezing it. */
+@media (max-width: 640px) {
+  .tree {
+    position: absolute;
+    inset: 0 auto 0 0;
+    z-index: 2;
+    width: min(28ch, 80%);
+    box-shadow: 8px 0 24px rgb(0 0 0 / 35%);
+  }
+}

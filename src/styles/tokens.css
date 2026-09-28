@@ -1,0 +1,61 @@
+/* Gruvbox palette — dark is the default, light via :set background=light. */
+:root,
+[data-theme='dark'] {
+  --bg-hard: #1d2021;
+  --bg: #282828;
+  --bg-1: #3c3836;
+  --bg-2: #504945;
+  --bg-3: #665c54;
+  --fg: #ebdbb2;
+  --fg-dim: #a89984;
+  --gray: #928374;
+  --red: #fb4934;
+  --green: #b8bb26;
+  --yellow: #fabd2f;
+  --blue: #83a598;
+  --purple: #d3869b;
+  --aqua: #8ec07c;
+  --orange: #fe8019;
+  --cursor-fg: #282828;
+  --search: #fabd2f;
+  --search-fg: #282828;
+  --desktop: radial-gradient(circle at 20% 10%, #3c3836 0%, #1d2021 55%, #141617 100%);
+  --window-shadow: 0 30px 80px rgb(0 0 0 / 55%), 0 0 0 1px rgb(255 255 255 / 6%);
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  --bg-hard: #f9f5d7;
+  --bg: #fbf1c7;
+  --bg-1: #ebdbb2;
+  --bg-2: #d5c4a1;
+  --bg-3: #bdae93;
+  --fg: #3c3836;
+  --fg-dim: #7c6f64;
+  --gray: #928374;
+  --red: #9d0006;
+  --green: #79740e;
+  --yellow: #b57614;
+  --blue: #076678;
+  --purple: #8f3f71;
+  --aqua: #427b58;
+  --orange: #af3a03;
+  --cursor-fg: #fbf1c7;
+  --search: #b57614;
+  --search-fg: #fbf1c7;
+  --desktop: radial-gradient(circle at 20% 10%, #f2e5bc 0%, #d5c4a1 60%, #bdae93 100%);
+  --window-shadow: 0 30px 80px rgb(60 56 54 / 35%), 0 0 0 1px rgb(0 0 0 / 8%);
+  color-scheme: light;
+}
+
+:root {
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+  --font-size: 14px;
+  --line-height: 1.55;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --font-size: 13px;
+  }
+}

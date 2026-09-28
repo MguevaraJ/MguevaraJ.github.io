@@ -1,0 +1,44 @@
+.cmdline {
+  display: flex;
+  align-items: center;
+  gap: 2ch;
+  min-height: calc(var(--font-size) * var(--line-height));
+  padding: 0 1ch;
+}
+
+.prompt {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  caret-color: var(--fg);
+}
+
+.message {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.message[data-level='error'] {
+  color: var(--red);
+}
+
+.message[data-level='success'] {
+  color: var(--green);
+}
+
+.showcmd {
+  color: var(--fg-dim);
+  white-space: pre;
+}

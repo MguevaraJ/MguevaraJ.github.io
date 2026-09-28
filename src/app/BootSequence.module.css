@@ -1,0 +1,36 @@
+.shell {
+  height: 100%;
+  padding: 1ch 1.5ch;
+  background: var(--bg);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.shell p {
+  margin: 0;
+}
+
+.dim {
+  color: var(--gray);
+}
+
+.prompt {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.caret {
+  background: var(--fg);
+  animation: blink 1.1s steps(1) infinite;
+}
+
+.hint {
+  margin-top: 2em !important;
+  color: var(--bg-3);
+}
+
+@keyframes blink {
+  50% {
+    background: transparent;
+  }
+}
