@@ -3,8 +3,8 @@ import type { BufferSource } from '@/editor/model/types'
 import type { Locale } from '@/i18n/locale'
 
 const copy = {
-  en: { title: 'Experience', client: 'client', stack: 'Stack' },
-  es: { title: 'Experiencia', client: 'cliente', stack: 'Stack' },
+  en: { title: 'Experience', stack: 'Stack' },
+  es: { title: 'Experiencia', stack: 'Stack' },
 } satisfies Record<Locale, unknown>
 
 export function experience(locale: Locale): BufferSource {
@@ -18,8 +18,7 @@ export function experience(locale: Locale): BufferSource {
       `# ${t.title}`,
       '',
       ...jobs.flatMap((job) => [
-        `## ${job.role[locale]} @ ${job.company}`,
-        ...(job.client ? [`> ${t.client}: **${job.client}**`] : []),
+        `## ${job.role[locale]} @ ${job.client ? `${job.company} · ${job.client}` : job.company}`,
         ...(job.period ? [`_${job.period[locale]}_`] : []),
         '',
         ...job.highlights[locale].map((item) => `- ${item}`),
