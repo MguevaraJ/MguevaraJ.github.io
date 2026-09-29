@@ -126,6 +126,44 @@ export const projects: Project[] = [
     stack: ['React', 'SVG', 'Express', 'MySQL', 'MongoDB', 'Linux'],
   },
   {
+    id: 'caring-data',
+    name: {
+      en: 'Geriatric-care management platform',
+      es: 'Plataforma de gestión de cuidado geriátrico',
+    },
+    context: {
+      en: 'Caring Data (via ASSIT TI) — the daily tool of the staff who look after elderly residents.',
+      es: 'Caring Data (vía ASSIT TI) — la herramienta diaria del personal que cuida a residentes de la tercera edad.',
+    },
+    challenge: {
+      en: 'Bring residents, staff, medical records and schedules into one system that non-technical staff could rely on every day.',
+      es: 'Reunir residentes, personal, historias médicas y agendas en un solo sistema en el que el personal no técnico pudiera confiar a diario.',
+    },
+    approach: {
+      en: [
+        'Built it end to end: React frontend, Laravel REST backend, MySQL data layer.',
+        'Modeled the relational schema for residents, staff, medical records and scheduling.',
+        'Admin panels with dynamic tables and custom reports.',
+      ],
+      es: [
+        'La construí de punta a punta: frontend en React, backend REST en Laravel y capa de datos en MySQL.',
+        'Modelé el esquema relacional de residentes, personal, historias médicas y agendas.',
+        'Paneles administrativos con tablas dinámicas y reportes personalizados.',
+      ],
+    },
+    outcome: {
+      en: [
+        'Admin panels and reports used daily by the internal staff.',
+        'Ongoing maintenance and direct support to the end users.',
+      ],
+      es: [
+        'Paneles y reportes usados a diario por el personal interno.',
+        'Mantenimiento continuo y soporte directo a los usuarios finales.',
+      ],
+    },
+    stack: ['React', 'Laravel', 'PHP', 'MySQL', 'REST APIs'],
+  },
+  {
     id: 'portfolio',
     name: { en: 'This portfolio', es: 'Este portafolio' },
     context: {
