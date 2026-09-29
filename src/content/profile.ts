@@ -46,8 +46,8 @@ export const profile: Profile = {
       href: 'https://www.linkedin.com/in/moisesguevara/',
     },
     source: {
-      label: 'github.com/MguevaraJ/portfolio',
-      href: 'https://github.com/MguevaraJ/portfolio',
+      label: 'github.com/MguevaraJ/MguevaraJ.github.io',
+      href: 'https://github.com/MguevaraJ/MguevaraJ.github.io',
     },
   },
   languages: [
