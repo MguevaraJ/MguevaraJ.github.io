@@ -1,11 +1,11 @@
 import type { Job } from './types'
 
-// TODO: add `period` to each job, e.g. period: { en: '03/2023 – Present', es: '03/2023 – Actual' }.
-// Jobs without a period simply don't show dates.
+// Keep in sync with ~/job-hunt/cv/cv-{en,es}.html. Jobs without a period don't show dates.
 export const experience: Job[] = [
   {
     id: 'vr-academy',
     role: { en: 'Fullstack Developer', es: 'Desarrollador Fullstack' },
+    period: { en: 'Jan 2026 – Aug 2026', es: 'ene. de 2026 – ago. de 2026' },
     company: 'VR Academy',
     stack: [
       'NestJS',
@@ -39,6 +39,7 @@ export const experience: Job[] = [
   {
     id: 'puerto-aguadulce',
     role: { en: 'Fullstack Developer', es: 'Desarrollador Fullstack' },
+    period: { en: 'Jan 2022 – Aug 2025', es: 'ene. de 2022 – ago. de 2025' },
     company: 'ASSIT TI',
     client: 'Sociedad Puerto Aguadulce',
     stack: ['Angular 15', 'NgRx', 'TypeScript', 'Spring Boot', 'WildFly', 'Microservices'],
@@ -60,6 +61,7 @@ export const experience: Job[] = [
   {
     id: 'caring-data',
     role: { en: 'Fullstack Developer', es: 'Desarrollador Fullstack' },
+    period: { en: 'Jul 2023 – Aug 2025', es: 'jul. de 2023 – ago. de 2025' },
     company: 'ASSIT TI',
     client: 'Caring Data',
     stack: ['React', 'Laravel', 'MySQL'],
@@ -81,6 +83,7 @@ export const experience: Job[] = [
   {
     id: 'ieh',
     role: { en: 'Software Engineer', es: 'Ingeniero de Software' },
+    period: { en: 'Jan 2020 – Dec 2021', es: 'ene. de 2020 – dic. de 2021' },
     company: 'IEH Electricidad',
     stack: ['React', 'Express', 'Node.js', 'MySQL', 'MongoDB', 'Linux', 'SVG'],
     highlights: {
