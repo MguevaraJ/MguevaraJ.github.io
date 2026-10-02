@@ -5,7 +5,8 @@ import type { Locale } from '@/i18n/locale'
 const copy = {
   en: {
     title: 'Projects',
-    intro: 'Selected work. Client code is private, so these are told as case studies.',
+    intro:
+      'Selected work. Client code is private, so those are told as case studies; personal projects link to their source.',
     challenge: 'Challenge',
     approach: 'Approach',
     outcome: 'Outcome',
@@ -14,7 +15,7 @@ const copy = {
   es: {
     title: 'Proyectos',
     intro:
-      'Trabajo seleccionado. El código de clientes es privado, así que los cuento como casos de estudio.',
+      'Trabajo seleccionado. El código de clientes es privado, así que esos los cuento como casos de estudio; los proyectos personales enlazan a su código.',
     challenge: 'Reto',
     approach: 'Enfoque',
     outcome: 'Resultado',

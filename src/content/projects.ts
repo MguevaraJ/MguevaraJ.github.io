@@ -164,6 +164,70 @@ export const projects: Project[] = [
     stack: ['React', 'Laravel', 'PHP', 'MySQL', 'REST APIs'],
   },
   {
+    id: 'f2f3',
+    name: {
+      en: 'F2+F3: screenshot manager for technical Minecraft',
+      es: 'F2+F3: gestor de capturas para Minecraft técnico',
+    },
+    context: {
+      en: 'Personal, open-source product in three repositories: a desktop app, a game mod and its website. Designed, built and released by me.',
+      es: 'Producto personal y open source en tres repositorios: una app de escritorio, un mod del juego y su sitio web. Diseñado, construido y publicado por mí.',
+    },
+    challenge: {
+      en: 'Technical players use screenshots as notes: the coordinates, biome and dimension live in the F3 debug overlay, trapped inside the image. Turn a folder of PNGs into searchable data, offline and without making the player change how they play.',
+      es: 'Los jugadores técnicos usan las capturas como notas: las coordenadas, el bioma y la dimensión viven en el overlay de depuración F3, atrapados dentro de la imagen. Convertir una carpeta de PNGs en datos consultables, sin internet y sin cambiarle al jugador su forma de jugar.',
+    },
+    approach: {
+      en: [
+        '**f2f3 (desktop app)** — turns screenshots into data. A pixel-level OCR reads the F3 overlay using the real bitmap font extracted from the game, in worker threads; on top of it, a gallery, viewer, coordinate search (`x>1000 y<0`) and export to Excel/CSV/ZIP.',
+        '**f2f3 · AI in layers** — every value is labelled by how reliable it is: exact (F3 or mod) > advanced vision (Claude, OpenAI, Gemini or Ollama, optional) > a local CLIP model > color heuristics. It works with no API key and never passes a guess off as a fact.',
+        '**f2f3 · desktop engineering** — pure, Electron-free core so the logic is unit-testable; sandboxed renderer with a typed IPC contract and strict CSP; incremental Google Drive backup with OAuth (loopback + PKCE).',
+        '**f2f3-companion (Fabric mod, Java)** — removes the guesswork at the source: on every screenshot it writes the exact game state next to the image, and brings the app into the game (gallery, guide arrow to where a screenshot was taken, saving and placing builds). One reference version plus ports to two older Minecraft versions through a small compatibility layer.',
+        '**f2f3-web (landing, Astro)** — explains the product in English and Spanish with no client framework. The accuracy figures of the local model are generated from an evaluation script, not written by hand.',
+      ],
+      es: [
+        '**f2f3 (app de escritorio)** — convierte capturas en datos. Un OCR píxel a píxel lee el overlay F3 con la fuente bitmap real extraída del juego, en worker threads; encima, galería, visor, búsqueda por coordenadas (`x>1000 y<0`) y exportación a Excel/CSV/ZIP.',
+        '**f2f3 · IA por capas** — cada dato se etiqueta según qué tan confiable es: exacto (F3 o mod) > visión avanzada (Claude, OpenAI, Gemini u Ollama, opcional) > un modelo CLIP local > heurística de colores. Funciona sin API key y nunca hace pasar una estimación por un hecho.',
+        '**f2f3 · ingeniería de escritorio** — núcleo puro, sin Electron, para que la lógica sea testeable; renderer en sandbox con contrato IPC tipado y CSP estricta; respaldo incremental en Google Drive con OAuth (loopback + PKCE).',
+        '**f2f3-companion (mod de Fabric, Java)** — elimina la incertidumbre en el origen: en cada captura escribe junto a la imagen el estado exacto del juego, y lleva la app dentro del juego (galería, flecha que te guía al lugar de una captura, guardar y colocar builds). Una versión de referencia y ports a dos versiones anteriores de Minecraft con una pequeña capa de compatibilidad.',
+        '**f2f3-web (landing, Astro)** — explica el producto en inglés y español sin framework de cliente. Las cifras de precisión del modelo local se generan con un script de evaluación, no se escriben a mano.',
+      ],
+    },
+    outcome: {
+      en: [
+        'Released: versioned builds of the app and the mod on GitHub, with the Windows installer built in GitHub Actions; landing live on GitHub Pages.',
+        '172 automated tests; the OCR reads vanilla screenshots with 100% accuracy in the test suite.',
+        'Local model measured on 248 screenshots labelled by the mod: 85% on mobs, 42% on biomes. Published as is, which is why the app only answers when confidence is high.',
+      ],
+      es: [
+        'Publicado: versiones de la app y del mod en GitHub, con el instalador de Windows compilado en GitHub Actions; landing en línea con GitHub Pages.',
+        '172 tests automatizados; el OCR lee las capturas vanilla con 100 % de precisión en la suite de tests.',
+        'Modelo local medido sobre 248 capturas etiquetadas por el mod: 85 % en mobs, 42 % en biomas. Publicado tal cual, y por eso la app solo responde cuando la confianza es alta.',
+      ],
+    },
+    stack: [
+      'Electron',
+      'React',
+      'TypeScript',
+      'Zustand',
+      'Vitest',
+      'CLIP (transformers.js)',
+      'Java',
+      'Fabric',
+      'Astro',
+      'GitHub Actions',
+    ],
+    links: [
+      { label: 'mguevaraj.github.io/f2f3-web', href: 'https://mguevaraj.github.io/f2f3-web/' },
+      { label: 'github.com/MguevaraJ/f2f3', href: 'https://github.com/MguevaraJ/f2f3' },
+      {
+        label: 'github.com/MguevaraJ/f2f3-companion',
+        href: 'https://github.com/MguevaraJ/f2f3-companion',
+      },
+      { label: 'github.com/MguevaraJ/f2f3-web', href: 'https://github.com/MguevaraJ/f2f3-web' },
+    ],
+  },
+  {
     id: 'portfolio',
     name: { en: 'This portfolio', es: 'Este portafolio' },
     context: {
