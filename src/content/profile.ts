@@ -18,22 +18,26 @@ export const profile: Profile = {
     en: [
       'I build and ship production web platforms in TypeScript. On the backend I focus on NestJS and Node.js: multi-tenant SaaS, REST and WebSocket APIs, real-time state synchronization and event-driven services.',
       'On the frontend I work with React and Angular at scale, including a full AngularJS → Angular 15 migration and complex state management with NgRx and Redux. I am comfortable owning the path to production: Linux servers, automated deployments and SQL/NoSQL data modeling.',
+      'Lately I have been going deep into AI engineering. I designed and built a multi-agent coding system with LangGraph (Supervisor pattern) that pairs Claude with local models served by Ollama: structured output end to end, graph-based code retrieval (my own GraphRAG), sandboxed execution of generated code and tracing with LangSmith. In production, I shipped an AI-assisted 360° content generator at VR Academy.',
     ],
     es: [
       'Construyo y llevo a producción plataformas web en TypeScript. En el backend me enfoco en NestJS y Node.js: SaaS multi-tenant, APIs REST y WebSocket, sincronización de estado en tiempo real y servicios orientados a eventos.',
       'En el frontend trabajo con React y Angular a escala, incluyendo una migración completa de AngularJS a Angular 15 y manejo de estado complejo con NgRx y Redux. Me siento cómodo siendo dueño del camino a producción: servidores Linux, despliegues automatizados y modelado de datos SQL/NoSQL.',
+      'Últimamente me he metido a fondo en ingeniería de IA. Diseñé y construí un sistema multiagente de programación con LangGraph (patrón Supervisor) que combina Claude con modelos locales servidos por Ollama: salida estructurada de extremo a extremo, recuperación de contexto basada en un grafo del código (un GraphRAG propio), ejecución aislada del código generado y trazas con LangSmith. En producción, entregué un generador de contenido 360° asistido por IA en VR Academy.',
     ],
   },
   strengths: {
     en: [
       '**Backend that holds up in production** — multi-tenancy, REST & WebSocket APIs, real-time sync.',
       '**Frontend at scale** — React and Angular, including legacy migrations.',
+      '**AI engineering** — multi-agent systems with LangGraph, Claude and local LLMs, structured outputs and RAG.',
       '**Architecture that survives growth** — Clean Architecture, Nx monorepos, shared libraries.',
       '**Ownership end to end** — Linux, Nginx, Docker and automated deploys.',
     ],
     es: [
       '**Backend que aguanta en producción** — multi-tenancy, APIs REST y WebSocket, sincronización en tiempo real.',
       '**Frontend a escala** — React y Angular, incluyendo migraciones de sistemas legacy.',
+      '**Ingeniería de IA** — sistemas multiagente con LangGraph, Claude y LLMs locales, salida estructurada y RAG.',
       '**Arquitectura que sobrevive al crecimiento** — Clean Architecture, monorepos Nx, librerías compartidas.',
       '**Responsabilidad de punta a punta** — Linux, Nginx, Docker y despliegues automatizados.',
     ],

@@ -16,6 +16,24 @@ export const skillGroups: SkillGroup[] = [
     items: ['TypeScript', 'JavaScript (ES6+)', 'PHP', 'Java', 'Python', 'SQL'],
   },
   {
+    key: 'ai',
+    comment: {
+      en: 'AI engineering: agents, RAG and LLM tooling',
+      es: 'ingeniería de IA: agentes, RAG y herramientas para LLMs',
+    },
+    items: [
+      'LangGraph',
+      'LangChain',
+      'Claude API',
+      'Ollama (local LLMs)',
+      'Multi-agent systems',
+      'Structured outputs (Pydantic / Outlines)',
+      'RAG / GraphRAG',
+      'LangSmith',
+      'Prompt engineering',
+    ],
+  },
+  {
     key: 'backend',
     comment: { en: 'APIs, real-time and services', es: 'APIs, tiempo real y servicios' },
     items: [
@@ -57,6 +75,7 @@ export const skillGroups: SkillGroup[] = [
       'Linux',
       'Nginx',
       'Docker',
+      'Podman',
       'AWS S3',
       'PM2',
       'Nx monorepo',

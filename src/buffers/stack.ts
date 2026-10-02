@@ -5,11 +5,11 @@ import type { Locale } from '@/i18n/locale'
 const copy = {
   en: [
     '// stack.ts — the tools I reach for, grouped by layer.',
-    '// Everything below has been shipped to production at least once.',
+    '// Things I have actually built with, in production systems and my own projects.',
   ],
   es: [
     '// stack.ts — las herramientas que uso, agrupadas por capa.',
-    '// Todo lo que sigue lo he llevado a producción al menos una vez.',
+    '// Cosas con las que de verdad he construido, en sistemas en producción y proyectos propios.',
   ],
 } satisfies Record<Locale, string[]>
 
