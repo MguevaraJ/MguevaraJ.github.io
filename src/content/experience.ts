@@ -1,6 +1,6 @@
 import type { Job } from './types'
 
-// Keep in sync with ~/job-hunt/cv/cv-{en,es}.html. Jobs without a period don't show dates.
+// Keep in sync with ~/Proyectos/job-hunt/cv/cv-{en,es}.html. Jobs without a period don't show dates.
 export const experience: Job[] = [
   {
     id: 'vr-academy',

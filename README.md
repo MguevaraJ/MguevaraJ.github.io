@@ -73,7 +73,7 @@ Key decisions:
 
 - Jobs → `src/content/experience.ts` · Projects → `src/content/projects.ts`
 - Skills → `src/content/skills.ts` · Bio, links, languages → `src/content/profile.ts`
-- CV PDFs → `public/cv/` (regenerate from `~/job-hunt/cv/build.sh` and copy them over)
+- CV PDFs → `public/cv/` (regenerate from `~/Proyectos/job-hunt/cv/build.sh` and copy them over)
 
 ### Adding a new tab
 
