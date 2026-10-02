@@ -18,8 +18,8 @@ export const skillGroups: SkillGroup[] = [
   {
     key: 'ai',
     comment: {
-      en: 'AI engineering: agents, RAG and LLM tooling',
-      es: 'ingeniería de IA: agentes, RAG y herramientas para LLMs',
+      en: 'AI engineering: agents, RAG, local models and evaluation',
+      es: 'ingeniería de IA: agentes, RAG, modelos locales y evaluación',
     },
     items: [
       'LangGraph',
@@ -31,6 +31,10 @@ export const skillGroups: SkillGroup[] = [
       'RAG / GraphRAG',
       'LangSmith',
       'Prompt engineering',
+      'Local vision models (CLIP, transformers.js / ONNX)',
+      'Zero-shot classification & embeddings',
+      'Model evaluation (precision / coverage)',
+      'OpenAI & Gemini APIs',
     ],
   },
   {
@@ -51,7 +55,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     key: 'frontend',
-    comment: { en: 'interfaces and state', es: 'interfaces y estado' },
+    comment: { en: 'interfaces, state and desktop', es: 'interfaces, estado y escritorio' },
     items: [
       'React',
       'Angular (2+ / 15)',
@@ -60,6 +64,9 @@ export const skillGroups: SkillGroup[] = [
       'Vite',
       'MUI',
       'TailwindCSS',
+      'Zustand',
+      'Electron',
+      'Astro',
       'SVG / data viz',
     ],
   },
@@ -81,6 +88,9 @@ export const skillGroups: SkillGroup[] = [
       'Nx monorepo',
       'Git (GitHub / GitLab)',
       'Jest',
+      'Vitest',
+      'GitHub Actions',
+      'Gradle',
       'Swagger',
       'WildFly',
     ],
